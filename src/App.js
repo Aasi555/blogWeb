@@ -3,6 +3,8 @@ import { Route, Routes } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Content from './components/Content';
 import Footer from './components/Footer';
+import Intro from './components/Intro';
+
 
 const App = () => {
   const topics = [
@@ -14,6 +16,7 @@ const App = () => {
   return (
     <div className="app">
       <Sidebar topics={topics} />
+      <Intro/>
       <div className="content">
         <Routes>
           {topics.map((topic) => (
