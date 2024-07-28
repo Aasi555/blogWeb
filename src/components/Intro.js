@@ -1,9 +1,9 @@
 import React from 'react';
-//import './Intro.css';
+import "./intro.css"
 
 const Intro = () => {
   return (
-    <div >
+    <div className="intro">
       <h1>Welcome to Echoes of Wisdom</h1>
       <p>
         Welcome to <strong>Echoes of Wisdom</strong>, a space where the threads of consciousness, thoughts, and wisdom are woven together to create a tapestry of insight and reflection.
