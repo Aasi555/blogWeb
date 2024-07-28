@@ -16,9 +16,10 @@ const App = () => {
   return (
     <div className="app">
       <Sidebar topics={topics} />
-      <Intro/>
+ 
       <div className="content">
         <Routes>
+        <Route key={'/'} path={"/"} element={<Intro />} />
           {topics.map((topic) => (
             <Route key={topic.path} path={topic.path} element={<Content name={topic.name} />} />
           ))}
